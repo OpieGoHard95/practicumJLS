@@ -6,7 +6,7 @@ function minusOne(match, amount, unit) {
   else if (amount == 0)
     amount = "no";
   else if (amount >= 100)
-    amount = "zillions";
+    amount = "zillions of";
   return amount + " " + unit;
 }
 print(stock.replace(/(\d+) (\w+)/g, minusOne));
