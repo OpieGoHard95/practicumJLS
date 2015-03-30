@@ -5,6 +5,7 @@ function minusOne(match, amount, unit) {
     unit = unit.slice(0, unit.length - 1);
   else if (amount == 0)
     amount = "no";
+// Here is where the "zillions of" replace takes place
   else if (amount >= 100)
     amount = "zillions of";
   return amount + " " + unit;
